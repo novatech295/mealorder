@@ -1,0 +1,44 @@
+
+.a{
+ 
+   display: flex;
+   justify-content: center; 
+}
+.a h1{
+    font-size: 28px;
+    margin-top: 8px;
+}
+.a input{
+    font-size: 16px !important;
+}
+.a .form{ 
+    font-size: 18px;
+
+}
+
+.container input{
+    margin-top: 8px;
+}
+.container form button{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left:10dvh;
+    width: 90px;
+    height: 70;
+    padding: 2px;
+    border: solid 1px;
+    border-radius: 10px;
+    font-family: 'Roboto','sans-serfi';   
+    background-color: #e63613;
+    color: #fff;
+    border-color: #e63613;
+}
+.Name-Error,.Location-Error,.Number-Error{
+    font-size: 14px;
+    color:#ca0000;
+}
+@media (max-width:400px){
+    .Header-Button{
+        margin-left: 10vdh;
+    } 
+}

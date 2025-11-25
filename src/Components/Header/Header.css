@@ -1,0 +1,79 @@
+/*Head to Start*/
+:root{
+    --visibility:visible;
+    --heightImg:300px;
+    --heightHead:auto;
+}
+.Header-Button{
+    visibility: var(--visibility);
+}
+
+header{
+    width: 100%;
+    height: var(--heightHead);
+    padding: 10px 0px;
+    background-color: #f23711;
+    border: solid 1px #f23711;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+}
+header h2 {
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Roboto','sans-serfi';   
+}
+header button{
+    width: 160px;
+    height: 45px;
+    line-height: 45px;
+    background-color: #e32c07;
+    border: solid 1px #e32c07;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+
+}
+header button img{
+    width: 30px;
+    height: 30px;
+    margin: 0px 10px 0px 20px ;
+    color: #fff;
+
+}
+header button span{
+    background-color: #781804;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    border-radius: 50%;
+    -webkit-border-radius:50%;
+    -moz-border-raduis:50%;
+    -ms-border-raduis:50%;
+    -o-border-raduis:50%;
+
+}
+/*  start the main */
+.main{
+    
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.main img{
+    width: 100%;
+    height: var(--heightImg);
+
+}
+@media(max-width:575px){
+  .Header-But{
+    margin: auto;
+  }
+  header button{
+    width: 140px;
+    height: 35px;}
+}

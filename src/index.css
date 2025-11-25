@@ -1,0 +1,13 @@
+
+:root{
+    --color:#333;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto','sans-serfi';
+    font-family: 'Tajawal','sans-serfi'; 
+    background-color: var(--color) !important;  
+    width: 100%;
+    height: 100%; 
+}

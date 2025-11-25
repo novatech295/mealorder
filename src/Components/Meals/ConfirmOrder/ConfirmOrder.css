@@ -1,0 +1,199 @@
+:root{
+    --vis:hidden;
+}
+
+.focus{
+    visibility: var(--vis);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top:0;
+    left: 0;
+    background: rgba(0, 0, 0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Confirm-Box{
+    background-color:#fff;
+    height: auto;
+    width: 800px;
+    max-width: 80%;
+    border-radius: 20px;
+}
+.Confirm-Box h4{
+    margin-left: 30px;
+    margin-top: 30px;
+    font-family: 'Roboto','sans-serfi';   
+}
+.Confirm-Box .price{
+    color:  #f23711;
+    margin-left: 30px;
+    font-family: 'Roboto','sans-serfi';   
+}
+.Confirm-Box .numberItem{
+    width:90px ;
+    height: 90px;
+    background-color: #fff;
+    border: solid 1px rgb(121, 121, 121);
+    margin-left: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    font-family: 'Roboto','sans-serfi';   
+    overflow: hidden;
+    color:rgb(77, 75, 75) ;
+    padding:4px 9px;
+}
+.Confirm-Box .AddButton,.MinseButton{
+    float: right;
+    width: 50px;
+    height: 30px;
+    font-size: 20px;
+    background-color: #fff;
+    color: #f23711;
+    border: solid 1px #f23711;
+    border-radius: 5px;
+    line-height: 0px;
+    text-align: center;
+}
+.Confirm-Box .AddButton{
+    margin-right: 50px;
+    margin-left: 20px;
+
+}
+.Confirm-Box .my-hr{
+    margin-top: 20px;
+    height: 2px;
+    width: 96%;
+    border-color:#f23711 ;
+    background-color: #f23711;
+ 
+}
+.close-btn,.order-btn{
+    width: 80px;
+    height: 70;
+    padding: 2px;
+    border: solid 1px;
+    border-radius: 20px;
+    float: right;
+    margin: 10px;
+    font-family: 'Roboto','sans-serfi';   
+
+}
+.close-btn{
+    background-color: #fff;
+    color: #f23711;
+    border-color:#f23711 ;
+}
+.order-btn{
+    background-color: #e63613;
+    color: #fff;
+    border-color: #e63613;
+}
+.totalAmount{
+    float: right;
+    margin-right:20px ;
+}
+@media (max-width:575px) {
+
+ 
+    .Confirm-Box .numberItem{
+        font-size: 14px;
+        width:85px;
+        height: 85px;
+        margin-left: 28px;
+    }
+    .Confirm-Box .AddButton,.MinseButton{
+        width: 48px;
+        height: 28px;
+        font-size: 17px;
+
+    }
+    .Confirm-Box .AddButton{
+        margin-right: 20px;
+        margin-left: 20px;
+    
+    }
+    .Confirm-Box .my-hr{
+        width: 94%;
+    
+    
+        }
+    
+    
+}
+@media (max-width:450px) {
+    .Confirm-Box h4,.Confirm-Box .price{
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+  
+
+    .Confirm-Box .numberItem{
+        font-size: 12px;
+        width:80px;
+        height: 80px;
+        margin-left: 26px;
+    }
+    .Confirm-Box .AddButton,.MinseButton{
+        width: 46px;
+        height: 26px;
+        font-size: 16px;
+
+    }
+    .Confirm-Box .AddButton{
+        margin-right: 10px;
+        margin-left: 10px;
+    
+    } 
+    
+
+    
+}
+@media (max-width:350px) {
+    .Confirm-Box h4,.Confirm-Box .price{
+        margin-left: 10px;
+        margin-top: 50px;
+    }
+    .Confirm-Box .my-hr{
+        width: 92%;
+        }
+
+    .Confirm-Box .numberItem{
+        font-size: 11px;
+        width:75px;
+        height: 75px;
+        margin-left: 15px;
+    }
+    .Confirm-Box .AddButton,.MinseButton{
+        width: 44px;
+        height: 24px;
+        font-size: 15px;
+        margin-top: 2px;
+
+    }
+    
+}
+@media (max-width:300px) {
+
+    .Confirm-Box h4,.Confirm-Box .price{
+        margin-left: 5px;
+        margin-top: 40px;
+    }
+    .Confirm-Box .numberItem{
+        font-size: 9px;
+        width:70px;
+        height: 70px;
+        margin-left: 10px;
+    }
+   
+    .Confirm-Box .AddButton,.MinseButton{
+        margin-top: 4px;
+        width: 42px;
+        height: 22px;
+        font-size: 14px;
+
+    } 
+    
+}
