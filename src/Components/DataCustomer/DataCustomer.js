@@ -1,6 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
 import '../Header/Header.css';
-import axios from 'axios';
 import './DataCustomer.css';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { getDocs, collection, addDoc, deleteDoc, doc, updateDoc } from 'firebase/firestore';
@@ -35,10 +34,9 @@ const DataCustomer = () => {
     e.preventDefault();
     try {
       schema.validateSync(FormData, { abortEarly: false });
-      const response = await axios.post('https://nehadshretahh.pythonanywhere.com/add/', FormData);
-      console.log(response.data);
+      await addDoc(dataCollection, { FormData });
       setCount([]);
-      navigate('/Meal_Order/');
+      navigate('/MealOrder');
     } catch (error) {
 
       const newErrors = {};

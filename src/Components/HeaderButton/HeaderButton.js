@@ -1,6 +1,6 @@
 import { CounterContext } from '../../App';
 import React, { useContext } from 'react';
-import imagecart from '../../Assets/pngegg.png';
+import imagecart from '../../Assets/pngegg.avif';
 import ConfirmOrder from '../Meals/ConfirmOrder/ConfirmOrder';
 import '../Header/Header.css';
 const HeaderButton = () => {
